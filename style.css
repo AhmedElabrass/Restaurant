@@ -1,0 +1,330 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+.parent_container {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  align-items: center;
+  padding: 10px 30px;
+  z-index: 999;
+  height: 90px;
+  background-color: #c7791b;
+  /* position: relative; */
+}
+nav .nav-right i {
+  display: none;
+  color: white;
+  font-size: 25px;
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+}
+nav .links a {
+  font-size: 18px;
+  margin: 0 8px;
+  color: black;
+  transition: all 1s ease;
+}
+nav .links a:hover {
+  color: white;
+}
+/* start main */
+main {
+  height: 100vh;
+  width: 100%;
+  background-image: url(images/background-1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 40px;
+  /* background-attachment: fixed; */
+}
+/* end main */
+/* section one start */
+.menu {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("images/background-2.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 60px 30px;
+}
+.title {
+  text-align: center;
+  color: #c7791b;
+  font-size: 50px;
+  margin: 20px 0;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.parent_menu {
+  display: flex;
+  justify-content: center;
+  padding: 20px 50px;
+  flex-wrap: wrap;
+}
+.food-item {
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.food-item img {
+  width: 100%;
+  height: 100%;
+}
+.food-item .icons {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #c7791b;
+  align-items: center;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  color: white;
+  font-size: 30px;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+.food-item:hover .icons {
+  bottom: 0px;
+}
+/* section one end */
+
+/* section Two start */
+.about {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("images/background-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.about div {
+  max-width: 800px;
+  padding-left: 30px;
+  margin: 50px 60px 0;
+}
+.about div h1 {
+  /* width: 100px; */
+  color: #c7791b;
+  font-size: 50px;
+  border-bottom: 5px solid #c7791b;
+  width: fit-content;
+}
+.about div p {
+  color: white;
+  font-size: 30px;
+  margin: 20px 0;
+  line-height: 1.7;
+}
+/* section Two end */
+
+/* section services start  */
+.services {
+  width: 100%;
+  min-height: 500px;
+  padding: 20px;
+  background-image: url("images/background-4.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.services .parent-serv {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.services .parent-serv div {
+  width: 400px;
+  height: 400px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.services .parent-serv img {
+  width: 200px;
+  height: 200px;
+  padding: 20px;
+}
+.services .parent-serv h1 {
+  /* font-size: 40px; */
+  color: #c7791b;
+  font-weight: 400;
+  letter-spacing: 1.2px;
+}
+/* section services end  */
+
+/* section contact start  */
+.contact {
+  width: 100%;
+  min-height: 60vh;
+  background-image: url("images/background-5.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.contact h1 {
+  text-align: center;
+  color: #c7791b;
+  font-size: 50px;
+  font-weight: 400;
+  padding-top: 10px;
+  padding: 45px 30px;
+}
+.contact form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding: 0px 30px;
+}
+.contact form div {
+  width: 49%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact form div input {
+  width: 100%;
+  height: 60px;
+  padding: 20px;
+  margin: 8px 0px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  font-size: 25px;
+  box-shadow: 0px 0px 8px 0px black;
+}
+.contact form div .message {
+  height: 140px;
+}
+.contact form div input[type="submit"] {
+  background-color: #23272c;
+  box-shadow: none;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.contact form div input[type="submit"]:hover {
+  background-color: #c7791b;
+  color: #23272c;
+}
+/* section contact end  */
+
+/* fotter start */
+footer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #23272c;
+}
+footer p {
+  color: white;
+  font-size: 25px;
+}
+footer p a {
+  margin: 10px;
+  color: greenyellow;
+}
+footer .watsapp {
+  color: greenyellow;
+  font-size: 25px;
+}
+/* fotter end */
+@media (max-width: 500px) {
+  nav .nav-right i {
+    display: block;
+  }
+  nav .links {
+    position: absolute;
+    background-color: #23272c;
+    width: 200px;
+    height: 300px;
+    top: 0;
+    right: -200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1s ease;
+  }
+  nav .links a {
+    color: white;
+    margin: 10px 0px;
+    font-size: 25px;
+  }
+  nav .links a:hover {
+    color: #c7791b;
+  }
+  nav .nav-right:hover .links {
+    right: 0px;
+    top: 80px;
+  }
+  main {
+    font-size: 25px;
+  }
+  .parent_menu {
+    padding: 20px 20px;
+  }
+  .food-item {
+    width: 400px;
+    height: 300px;
+  }
+  .about div {
+    max-width: 500px;
+    padding-left: 30px;
+    margin: 20px 20px 0;
+  }
+  .about div h1 {
+    font-weight: 500;
+    border-bottom: 3px solid #c7791b;
+  }
+  .contact form {
+    margin-top: 20px;
+    padding: 20px 10px;
+  }
+  .contact form div {
+    width: 100%;
+  }
+  .contact form div input {
+    font-size: 18px;
+  }
+  footer p {
+  }
+}
